@@ -1,9 +1,9 @@
-@import url("https://unpkg.com/bulma@0.8.0/css/bulma.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+@import url("https://unpkg.com/bulma@0.8.0/css/bulma.min.css");
 @import url("./helpers.css");
 @import url("./timeline.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css");
 
 /*@font-face {
   font-family: GalanoGrotesqueBold;
@@ -213,6 +213,21 @@ hr {
   }
 }
 
+.article-card{
+    background-image: linear-gradient( 44.8deg,  rgba(255,136,102,0.6) -53.1%, rgba(255,221,136,0.28) 49% );
+}
+
+.article-img{
+    height: 180px;
+    border-radius: 10px;
+}
+
+.article-card h5{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 0.3em;
+}
+
 #leaderboard-table{
     background-color: transparent !important;
     color: #fff;
@@ -254,6 +269,25 @@ hr {
     position: relative;
 }
 
+.section{
+    overflow: hidden !important;
+}
+
+.slider-navigation-previous, .slider-navigation-next{
+    color: #010A2D;
+}
+
+.img-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.feedback-img{
+    border-radius: 30px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
 .contact-us-card{
     margin: auto !important;
     text-align: left;
@@ -279,6 +313,10 @@ hr {
     #contact p.subtitle{
       text-align: center;
     }
+    #scoreboard-container{
+        display: flex;
+        align-items: center;
+    }
   }
 
 .contact-img{
@@ -287,28 +325,22 @@ hr {
 }
 
 /*sponsors section*/
-.sponsor-logo {
-    height: 180px;
-    width: 180px;
-    background: white;
+.sponsor-logo2{
+    height: 150px;
+    width: 150px;
 }
 
 .sponsor-icon{
     font-size: 20px;
     margin: 0 10px;
-    /*padding: 20px;
-    border-style: solid;
-    border-radius: 50px;
-    border-width: 2px;*/
 }
 
 .sponsor-card{
     margin: auto !important;
-    max-width: 280px;
+    max-width: 240px;
     color: #010A2D;
     background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
 }
-
 
 /*footer */
 .footer {
@@ -371,5 +403,16 @@ word-break: break-word;
     }
     .scoreboard{
         height: 300px;
+    }
+}
+@media screen and (max-width: 380px) {
+    #leaderboard-table{
+        width: 280px;
+    }
+    .group-col-sl{
+        padding-left: 1em !important;
+    }
+    .group-col{
+        padding-left: 4em !important;
     }
 }

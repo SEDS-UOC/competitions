@@ -156,6 +156,10 @@
     min-width: 210px;
 }
 
+.timeline ul li .tl-card .watch-btn{
+    display: none;
+}
+
 @media(max-width:1000px){
     .timeline{
         width:100%;
@@ -197,7 +201,7 @@
         width:100%;
         text-align:left;
         padding-left:50px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
         
     }
     .timeline ul li:nth-child(even):before,
@@ -228,5 +232,9 @@
     }
     .tl-card-text{
         margin-top: 0.5rem;
+    }
+
+    .timeline ul li .tl-card .watch-btn{
+        display:block;
     }
 }
